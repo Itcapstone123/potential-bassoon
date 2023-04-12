@@ -23,10 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $productName = $_POST["product-name"];
   $grandTotal = $_POST["grand-total"];
 
-    $servername = "127.0.0.1:3306";
-    $username = "u822925530_Itcapstone";
-    $password = "@Itcapstone123";
-    $dbname = "u822925530_Itcapstone";
+    $servername = "";
+    $username = "";
+    $password = "";
+    $dbname = "";
   $conn = new mysqli($servername, $username, $password, $dbname);
 
   if ($conn->connect_error) {
