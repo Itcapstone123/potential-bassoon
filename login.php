@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$host = '127.0.0.1:3306';
-$user = 'u822925530_Itcapstone';
-$pass = '@Itcapstone123';
-$dbname = 'u822925530_Itcapstone';
+$host = '';
+$user = '';
+$pass = '';
+$dbname = '';
 $conn = mysqli_connect($host, $user, $pass, $dbname);
 
 if (!$conn) {
