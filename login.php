@@ -23,7 +23,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
         if (($password == $row['password'])) {
             $_SESSION['email'] = $row['email'];
-            header('Location: index.html'); // Replace with your home page URL
+            header('Location: indexs.html'); // Replace with your home page URL
         } else {
             // Password is incorrect
             echo 'Invalid email or password';
