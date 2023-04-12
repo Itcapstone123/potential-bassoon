@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>IT Capstone Apparel</title>
+
+        <link href="img/favicon.ico" rel="icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top bar End -->
+        
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="indexs.html" class="nav-item nav-link active">Home</a>
+                            <a href="product-lists.html" class="nav-item nav-link">Products</a>
+                            <a href="contacts.html" class="nav-item nav-link">Contact Us</a>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                                <div class="dropdown-menu">
+                                    <a href="https://itcapstoneapparel.com/index.html" class="dropdown-item">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->      
+        
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="indexs.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <a href="carts.html" class="btn cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span id="cart-counter">(0)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End -->       
+        
+        <!-- Main Slider Start -->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="navbar bg-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-home"></i>Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#featured"><i class="fa fa-shopping-bag"></i>Best Selling</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#recent"><i class="fa fa-plus-square"></i>New Arrivals</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list-males.html"><i class="fa fa-male"></i>Mens Clothes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product-list-females.html"><i class="fa fa-female"></i>Womens Clothes</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header-slider normal-slider">
+                            <div class="header-slider-item">
+                                <img src="img/slider-1.jpg" alt="Slider Image" />
+                                <div class="header-slider-caption">
+                                    <p>Fashion For Every Man And Woman</p>
+                                    <a class="btn" href="product-lists.html"><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="header-img">
+                            <div class="img-item">
+                                <img src="img/category-1.jpg" />
+                                <a class="img-text" href="product-list-males.html">
+                                    <p>Come check out our mens clothing</p>
+                                </a>
+                            </div>
+                            <div class="img-item">
+                                <img src="img/category-2.jpg" />
+                                <a class="img-text" href="product-list-females.html">
+                                    <p>Come check out our womens clothing</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Slider End -->      
+        
+        
+        
+        <!-- Featured Product Start -->
+        <div class="featured-product product">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <a id="featured"><h1>Featured Products</h1></a>
+                </div>
+                <div class="row align-items-center product-slider product-slider-4">
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <div class="product-title">
+                                <a href="#">Women's Straight Jeans M</a>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-image">
+                                <a href="product-details.html">
+                                    <img src="img/women's straight jeans.jpg" alt="Product Image" style="width: 300px; height: 400px;">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" id="addToCart"><i class="fa fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <h3><span>$</span>49.99</h3>
+                                <a class="btn" id="addToCart" href="checkouts.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <div class="product-title">
+                                <a href="#" >Men's Straight Jeans M</a>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-image">
+                                <a href="product-details.html">
+                                    <img src="img/men's straight jeans.jpg" alt="Product Image" style="width: 300px; height: 400px;">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" id="addToCart"><i class="fa fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <h3><span>$</span>49.99</h3>
+                                <a class="btn" id="addToCart" href="checkouts.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <div class="product-title">
+                                <a href="#">Women's White Shirt M</a>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-image">
+                                <a href="product-details.html">
+                                    <img src="img/women's t-shirt.jpg" alt="Product Image" style="width: 300px; height: 400px;">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" id="addToCart"><i class="fa fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <h3><span>$</span>9.99</h3>
+                                <a class="btn" id="addToCart" href="checkouts.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <div class="product-title">
+                                <a href="#">Men's Black Sweater M</a>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-image">
+                                <a href="product-details.html">
+                                    <img src="img/black sweater.jpg" alt="Product Image" style="width: 300px; height: 400px;">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" id="addToCart"><i class="fa fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <h3><span>$</span>29.99</h3>
+                                <a class="btn" id="addToCart" href="checkouts.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featured Product End -->       
+        
+        <!-- Recent Product Start -->
+        <div class="recent-product product">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <a id="recent"><h1>Recent Products</h1></a>
+                </div>
+                <div class="row align-items-center product-slider product-slider-4">
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <div class="product-title">
+                                <a href="#">Women's Black Shorts M</a>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-image">
+                                <a href="product-details.html">
+                                    <img src="img/women's shorts.jpg" alt="Product Image" style="width: 300px; height: 400px;">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" id="addToCart"><i class="fa fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <h3><span>$</span>19.99</h3>
+                                <a class="btn" id="addToCart" href="checkouts.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <div class="product-title">
+                                <a href="#">Men's Black Shorts M</a>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-image">
+                                <a href="product-details.html">
+                                    <img src="img/men's shorts.jpg" alt="Product Image" style="width: 300px; height: 400px;">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" id="addToCart"><i class="fa fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <h3><span>$</span>19.99</h3>
+                                <a class="btn" id="addToCart" href="checkouts.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <div class="product-title">
+                                <a href="#">Women's  Black Sweater M</a>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="product-image">
+                                <a href="product-details.html">
+                                    <img src="img/women's sweater.jpg" alt="Product Image" style="width: 300px; height: 400px;">
+                                </a>
+                                <div class="product-action">
+                                    <a href="#" id="addToCart"><i class="fa fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <h3><span>$</span>29.99</h3>
+                                <a class="btn" id="addToCart" href="checkouts.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Recent Product End -->
+        
+                <!-- Newsletter Start -->
+        <div class="newsletter">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Subscribe Our Newsletter</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form">
+                            <input type="email" value="Your email here">
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter End -->   
+        
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Get in Touch</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>Orlando, FL, USA</p>
+                                <p><i class="fa fa-envelope"></i>groupfourcaptstone@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>+1(407)-123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Follow Us</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Company Info</h2>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Purchase Info</h2>
+                            <ul>
+                                <li><a href="#">Payment Policy</a></li>
+                                <li><a href="#">Shipping Policy</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                        <div class="payment-method">
+                            <h2>We Accept: <img src="img/payment-method.png" alt="Payment Method"/></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="payment-security">
+                            <h2>Secured By: <img src="img/godaddy.svg" alt="Payment Security" style= "width:100px;" /><img src="img/norton.svg" alt="Payment Security" style= "width:100px;"/><img src="img/ssl.svg" alt="Payment Security" style= "width:100px;"/></h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                    </div>
+
+                    <div class="col-md-6 template-by">
+										
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->       
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <script src="cart.js"></script>
+    </body>
+</html>
