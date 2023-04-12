@@ -17,9 +17,11 @@ for (var i = 0; i < addToCartBtns.length; i++) {
     }
 
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
-
+    calculateSubtotal();
     updateCartCounter();
+    calculateSubtotal();
     addNewRowInCart(productTitle, productPrice, productImage);
+    calculateSubtotal();
   });
 }
 
@@ -133,7 +135,6 @@ function displayCartItems() {
 
 
 document.getElementById('clear-cart-btn').addEventListener('click', function() {
-  // Clear the cart items from local storage
   localStorage.removeItem('cartItems');
   localStorage.removeItem('subtotal');
   localStorage.removeItem('grandTotal');
@@ -154,28 +155,34 @@ document.getElementById('clear-cart-btn').addEventListener('click', function() {
   cartBody.appendChild(placeholderRow);
 
   calculateSubtotal();
+  localStorage.setItem("subtotal", 0);
+  localStorage.setItem("grandTotal", 0);
 });
 
 function calculateSubtotal() {
-  let cartRows = document.querySelectorAll("#cart-body > tr");
+  let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
   let subtotal = 0;
 
-  cartRows.forEach((row) => {
-    let rowTotalElement = row.querySelector(".cart-total");
-    let rowTotal = parseFloat(rowTotalElement.textContent);
+  for (let i = 0; i < cartItems.length; i++) {
+    let item = cartItems[i];
+    let rowTotal = parseFloat(item.price.replace('$', '')) * item.quantity;
     subtotal += rowTotal;
-  });
+  }
 
-let subtotalElement = document.querySelector(".cart-summary .cart-content p > span");
-subtotalElement.textContent = "$" + subtotal.toFixed(2);
+  let subtotalElement = document.querySelector(".cart-summary .cart-content p > span");
+  if (subtotalElement) {
+    subtotalElement.textContent = "$" + subtotal.toFixed(2);
+  }
 
-let grandTotalElement = document.querySelector(".cart-summary .cart-content h2 > span");
-let grandTotal = (subtotal + 8.99).toFixed(2);
-grandTotalElement.textContent = "$" + grandTotal;
+  let grandTotalElement = document.querySelector(".cart-summary .cart-content h2 > span");
+  if (grandTotalElement) {
+    let grandTotal = (subtotal + 8.99).toFixed(2);
+    grandTotalElement.textContent = "$" + grandTotal;
+  }
 
-localStorage.setItem("subtotal", subtotal.toFixed(2));
-localStorage.setItem("grandTotal", grandTotal);
-
+  localStorage.setItem("subtotal", subtotal.toFixed(2));
+  localStorage.setItem("grandTotal", (subtotal + 8.99).toFixed(2));
 }
+
 
 displayCartItems();
