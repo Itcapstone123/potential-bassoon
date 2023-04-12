@@ -7,10 +7,8 @@ shippingAddressDiv.style.display = 'none';
 
 shipToCheckbox.addEventListener('change', function() {
   if (this.checked) {
-    // Show the shipping address div if the checkbox is checked
     shippingAddressDiv.style.display = 'block';
   } else {
-    // Hide the shipping address div if the checkbox is unchecked
     shippingAddressDiv.style.display = 'none';
   }
 });
