@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("127.0.0.1:3306", "u822925530_Itcapstone", "@Itcapstone123", "u822925530_Itcapstone");
+$mysqli = new mysqli("", "", "", "");
 
 if($mysqli === false){
     die("ERROR: Could not connect. " . $mysqli->connect_error);
